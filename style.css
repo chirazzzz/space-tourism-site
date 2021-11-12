@@ -1,4 +1,15 @@
 /* ------------------- */
+/* Custom Properites   */
+/* ------------------- */
+
+/**common-colors**/ 
+:root {
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
+/* ------------------- */
 /* Reset               */
 /* ------------------- */
 
@@ -71,6 +82,7 @@ select {
 /* Utility Classes     */
 /* ------------------- */
 
+/* General */
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -98,4 +110,20 @@ select {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap; /* added line */
     border: 0;
+}
+
+/* Colours */
+
+.bg-dark { background: hsl(var(--clr-dark) );}
+.bg-light { background: hsl(var(--clr-light) );}
+.bg-white { background: hsl(var(--clr-white) );}
+
+.text-dark { color: hsl(var(--clr-dark) );}
+.text-light { color: hsl(var(--clr-light) );}
+.text-white { color: hsl(var(--clr-white) );}
+
+.example-component { background: hsl(var(--clr-light) / 20% );}
+
+.color-block {
+    flex-grow: 1;
 }
